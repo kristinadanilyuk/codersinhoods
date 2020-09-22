@@ -1,0 +1,73 @@
+.main {
+    background-color: #000;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.wave {
+    background: url("./wave-1817646_1920.png");
+    background-size: cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+nav {
+    display: flex;
+    justify-content: flex-end;
+    z-index: 1;
+}
+.nav_list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+.nav_list li a {
+    color: #fff;
+    margin-right: 3em;
+    padding: 1em 0;
+    text-decoration: none;
+    font-family: roboto, sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+}
+.line {
+}
+.content {
+    color: #fff;
+    z-index: 1;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    width: 90%;
+    max-width: 1440px;
+}
+h2 {
+    font-family: roboto, sans-serif;
+    font-weight: 100;
+    font-size: 33px;
+    margin: 0;
+}
+h1 {
+    font-family: roboto, sans-serif;
+    font-weight: 400;
+    font-size: 56px;
+}
+.html_container {
+    display: flex;
+}
+.html_container .img_1 {
+    width: 50%;
+    min-height: 50px;
+}
+.img_1 {
+    background: url(./codes-coding-css-1921326.png);
+    height: 630px;
+    width: 583px;
+}
+.html_text {
+    left: 50px;
+    position: relative;
+}

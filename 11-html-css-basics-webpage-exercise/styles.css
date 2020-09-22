@@ -1,13 +1,13 @@
 h1 {
-    text-align: center;
-    font-family: Caudex;
     font-size: 72px;
     font-weight: 200;
     margin-bottom: 10px;
+    text-align: center;
+    font-family: "Caudex", serif;
 }
 h3 {
     text-align: center;
-    font-family: Caudex;
+    font-family: "Caudex", serif;
     font-size: 48px;
     font-weight: 500;
     margin-top: 10px;
@@ -18,7 +18,7 @@ h3 {
     font-size: 20px;
     margin-bottom: 60px;
 }
-.image_container {
+figure {
     width: 100%;
     max-width: 1440px;
     margin: 0 auto;
@@ -28,7 +28,7 @@ h3 {
 }
 .text {
     font-size: 18px;
-    font-family: Caudex;
+    font-family: "Caudex", serif;
     font-weight: 200;
     max-width: 920px;
     margin: 0 auto;
