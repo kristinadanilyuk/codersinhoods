@@ -10,6 +10,16 @@
  * a new array with these integers. If there is no integers it should return
  * empty array.
  */
+function getIntegersOnly(array) {
+  let integers = [];
+
+  for (const item of array) {
+    if (Number.isInteger(item)) {
+      integers.push(item);
+    }
+  }
+  return integers;
+}
 
 /**
  * Exercise 2
@@ -17,6 +27,15 @@
  * and returns a new array with even numbers only, if there is no even
  * integers it should return an empty array
  */
+function getEvenNumbers(integers) {
+  let evenNumbers = [];
+  for (const integer of integers) {
+    if (Number.isInteger(integer) && integer % 2 == 0) {
+      evenNumbers.push(integer);
+    }
+  }
+  return evenNumbers;
+}
 
 /**
  * Exercise 3
@@ -26,6 +45,15 @@
  * a new array with even numbers only, if there is no even integers it
  * should return an empty array
  */
+function getEvenNumbersFromMixedArray(values) {
+  let evenNumbers = [];
+  for (const value of values) {
+    if (Number.isInteger(value) && value % 2 == 0) {
+      evenNumbers.push(value);
+    }
+  }
+  return evenNumbers;
+}
 
 /**
  * Exercise 4
@@ -33,7 +61,15 @@
  * and returns a new array with odd numbers only, if there is no odd
  * integers it should return an empty array
  */
-
+function getOddNumbers(integers) {
+  let oddNumbers = [];
+  for (const integer of integers) {
+    if (Number.isInteger(integer) && integer % 2 == 1) {
+      oddNumbers.push(integer);
+    }
+  }
+  return oddNumbers;
+}
 /**
  * Exercise 5
  * create a function {evenOddTransform} which takes
@@ -43,3 +79,14 @@
  * If your param is [1,2,3,4,5] the result should be
  * [2,1,4,3,6]
  */
+function evenOddTransform(integers) {
+  let oddTrans = [];
+  for (const integer of integers) {
+    if (Number.isInteger(integer) && integer % 2 === 1) {
+      oddTrans.push(integer + 1);
+    } else {
+      oddTrans.push(integer - 1);
+    }
+  }
+  return oddTrans;
+}
