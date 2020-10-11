@@ -28,17 +28,18 @@ const user = {
  *
  * PS: use console.log() to see the result
  */
+const userFirstName = user.firstName;
 
 /**
  * Exercise 2
  *
- * create a variable "favoriteMovies"
+ * create a variable "favoriteMovie"
  * and assign first item from "user"
  * favoriteMovies array.
  *
  * PS: use console.log() to see the result
  */
-
+const favoriteMovie = user.favoriteMovies[0];
 /**
  * Exercise 3
  * create "userFullName" that equals to
@@ -47,8 +48,9 @@ const user = {
  *
  * PS: use console.log() to see the result
  */
-
+let userFullName = user.firstName + " " + user.lastName;
 /**
+ *
  * Exercise 4
  *
  * create a function "getFullName"
@@ -56,7 +58,10 @@ const user = {
  *
  * PS: use console.log() to see the result
  */
-
+function getFullName() {
+  return user.firstName + " " + user.lastName;
+  // return `${user.firstName} ${user.lastName}`;
+}
 /**
  * Exercise 5
  *
@@ -65,7 +70,8 @@ const user = {
  *
  * PS: use console.log() to see the result
  */
-
+let mothersFirstName = user.parents.mother.firstName;
+console.log(mothersFirstName);
 /**
  * Exercise 6
  *
@@ -75,7 +81,10 @@ const user = {
  *
  * PS: use console.log() to see the result
  */
-
+function getParentFullName(parent) {
+  return user.parents[parent].firstName + " " + user.parents[parent].lastName;
+}
+console.log(getParentFullName("mother"));
 /**
  * Exercise 7
  *
@@ -84,3 +93,7 @@ const user = {
  *
  * * PS: use console.log() to see the result
  */
+function getUserData(key) {
+  return user[key];
+}
+console.log(getUserData("firstName"));

@@ -6,7 +6,7 @@
  *
  * PS: use console.log() to see the result
  */
-
+let user = { firstName: "Tina", lastName: "Karl", age: 20 };
 /**
  * Exercise 2
  *
@@ -15,7 +15,14 @@
  *
  * PS: use console.log() to see the result
  */
-
+let allTypes = {
+  string: "Tor",
+  number: 5,
+  array: ["fox"],
+  object: { call: 20 },
+  function: function () {},
+  boolean: true,
+};
 /**
  * Exercise 3
  *
@@ -25,3 +32,11 @@
  *
  * PS: use console.log() to see the result
  */
+function createMovieObject(name, rating, ticketPrice) {
+  let movie = {
+    name: name,
+    rating: rating,
+    ticketPrice: ticketPrice,
+  };
+  return movie;
+}

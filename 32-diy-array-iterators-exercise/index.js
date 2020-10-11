@@ -1,7 +1,7 @@
-// 
+//
 /**
  * !!! IMPORTANT !!!
- * 
+ *
  * USE "for" loop to recreate all JS pre-built functions
  */
 
@@ -15,7 +15,12 @@
  * passed each element and the index.
  *
  */
-
+const forEach = (array, callback) => {
+  for (let index = 0; index < array.length; index++) {
+    const element = array[index];
+    callback(element, index);
+  }
+};
 /**
  * Exercise #2
  *
@@ -29,7 +34,12 @@
  * time the callback was invoked.
  *
  */
-
+const map = (array, callback) => {
+  for (let index = 0; index < array.length; index++) {
+    const element = array[index];
+    callback(element, index);
+  }
+};
 /**
  * Exercise #3
  *

@@ -25,6 +25,7 @@ const dataTypes = [
  * 4. arrays,
  * 5. objects
  *
+ *
  * and return object with property names equals types, and values should be
  * arrays with  corespondent data
  *
@@ -37,7 +38,7 @@ const dataTypes = [
  *  floats: [3.12]
  * }
  */
-
+function sortedData(dataTypes) {}
 
 /**
  * Exercise 2
@@ -63,7 +64,6 @@ const dataTypes = [
  * ex: multipliedEvenNumbers([4,3,6,8,5,7])
  * result: [24, 3, 48, 16, 5, 7]
  */
-
 
 /**
  * Exercise 4
