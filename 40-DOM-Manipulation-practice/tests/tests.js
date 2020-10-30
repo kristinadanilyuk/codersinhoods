@@ -24,7 +24,7 @@ describe("createAList", () => {
         const listLi = document.querySelectorAll(".list li");
         expect(listLi.length).toEqual(1);
       },
-      { timeout: 1000 }
+      { timeout: 1100 }
     );
 
     await waitFor(
@@ -32,7 +32,7 @@ describe("createAList", () => {
         const listLi = document.querySelectorAll(".list li");
         expect(listLi.length).toEqual(5);
       },
-      { timeout: 5000 }
+      { timeout: 5100 }
     );
   });
 });
@@ -127,7 +127,7 @@ describe("createAMessage", () => {
       () => {
         expect(document.querySelector(".hide")).toBeTruthy();
       },
-      { timeout: 6000 }
+      { timeout: 6100 }
     );
   });
 
@@ -139,7 +139,7 @@ describe("createAMessage", () => {
       () => {
         expect(document.querySelector(".message")).toBeFalsy();
       },
-      { timeout: 8000 }
+      { timeout: 8100 }
     );
   });
 });

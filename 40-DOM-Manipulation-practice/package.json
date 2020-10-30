@@ -1,7 +1,7 @@
 {
   "name": "test-exercise",
   "version": "1.0.0",
-  "description": "",
+  "description": "## Structure",
   "main": "index.js",
   "scripts": {
     "concat": "concat -o ./tests/index.test.js ./tests/DOM.js ./index.js ./tests/tests.js ",
@@ -13,6 +13,10 @@
   "devDependencies": {
     "@testing-library/dom": "^7.2.0",
     "concat": "^1.0.3",
-    "jest": "^25.1.0"
-  }
+    "jest": "^25.5.4"
+  },
+  "directories": {
+    "test": "tests"
+  },
+  "dependencies": {}
 }

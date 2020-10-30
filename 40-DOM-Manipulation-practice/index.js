@@ -8,18 +8,39 @@
  * 3. you should add only 5 list items.
  * 4. list item text should be "Item $"($ - position in the list)
  */
+const createAList = () => {
+  const ul = document.createElement("ul");
+  ul.classList.add("list");
+  document.body.appendChild(ul);
+  let counter = 0;
+  let myInterval = setInterval(() => {
+    const li = document.createElement("li");
+    li.innerText = `Item ${counter}`;
+    ul.appendChild(li);
+    counter++;
+    if (counter > 4) {
+      clearInterval(myInterval);
+    }
+  }, 1000);
+};
 
 /**
  * Exercise 2
  *
  * create a function {styleElement}
  *
- * Requirements:
- * 1. select the third list item from "".myList"
+Requirements:
+ * 1. select the third list item from ".myList"
  * 2. set background to "green" color
  * 3. set color to "white"
- * 4. set font size to 2em
+ * 4. set font size to 2em * 
  */
+const styleElement = () => {
+  const li = document.querySelector(".myList li:nth-child(3)");
+  li.style.backgroundColor = "green";
+  li.style.color = "white";
+  li.style.fontSize = "2em";
+};
 
 /**
  * Exercise 3
@@ -29,6 +50,14 @@
  * 1. select last element from the ".myList"
  * 2. wait 2 seconds and remove the element from the list
  */
+const removeLastChild = () => {
+  const lis = document.querySelectorAll(".myList li");
+
+  const last = lis[lis.length - 1];
+  setTimeout(() => {
+    last.remove();
+  }, 2000);
+};
 
 /**
  * Exercise 4
@@ -46,5 +75,18 @@
  * NOTE: check css file to see how we toggle styles
  * based on class "visible"
  */
-
-
+const createAMessage = (message) => {
+  const p = document.createElement("p");
+  p.classList.add("message");
+  p.innerText = message;
+  document.body.appendChild(p);
+  setTimeout(() => {
+    p.classList.add("visible");
+    setTimeout(() => {
+      p.classList.add("hide");
+      setTimeout(() => {
+        p.remove();
+      }, 2000);
+    }, 3000);
+  }, 3000);
+};
